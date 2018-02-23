@@ -1,0 +1,11 @@
+{
+    "name": "robconvery/circleci",
+    "description": "Test repository to learn circle ci",
+    "authors": [
+        {
+            "name": "Robert Convery",
+            "email": "robconvery@me.com"
+        }
+    ],
+    "require": {}
+}
