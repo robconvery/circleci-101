@@ -8,18 +8,29 @@ jobs:
     working_directory: ~/laravel
     steps:
       - checkout
-      - name: Install sqlite
-      - run: sudo apt install -y libsqlite3-dev zlib1g-dev
-      - run: sudo docker-php-ext-install zip
-      - name: Update composer
-      - run: sudo composer self-update
+
+      - run:
+        name: Install sqlite
+        command: sudo apt install -y libsqlite3-dev zlib1g-dev
+
+      - run:
+        name: docker php extension
+        command: sudo docker-php-ext-install zip
+
+      - run:
+        name: Update composer
+        command: sudo composer self-update
+
       - restore_cache:
           keys:
             - composer-v1-{{ checksum "composer.lock" }}
             - composer-v1-
-      - name: composer install
-      - run: composer install -n --prefer-dist
 
-      - name: run phpunit
-      - run: ./vendor/bin/phpunit
-      
+      - run:
+        name: composer install
+        command: composer install -n --prefer-dist
+
+
+      - run:
+        name: run phpunit
+        command: ./vendor/bin/phpunit
