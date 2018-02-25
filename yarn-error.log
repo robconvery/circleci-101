@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add gulp
+
+PATH: 
+  /usr/local/php5/bin:/usr/local/opt/php56/bin:/usr/local/pear/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "circleci-101",
+    "version": "1.0.0",
+    "description": "updated readme. Update",
+    "main": "index.js",
+    "directories": {
+      "test": "tests"
+    },
+    "dependencies": {
+      "yarn": "^1.3.2"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "git+https://github.com/robconvery/circleci-101.git",
+    "author": "Robert Convery <robconvery@me.com>",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/robconvery/circleci-101/issues"
+    },
+    "homepage": "https://github.com/robconvery/circleci-101#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/robertconvery/projects/circleci-101/node_modules/ansi-regex'

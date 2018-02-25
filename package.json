@@ -7,17 +7,16 @@
     "test": "tests"
   },
   "dependencies": {
-    "yarn": "^1.3.2"
+    "cross-env": "^5.1.3",
+    "gulp": "^3.9.1",
+    "yarn": "^1.5.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Hello world\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/robconvery/circleci-101.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/robconvery/circleci-101.git",
+  "author": "Robert Convery <robconvery@me.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/robconvery/circleci-101/issues"

@@ -29,4 +29,4 @@ jobs:
 
       - run: composer install -n --prefer-dist
       - run: ./vendor/bin/phpunit
-      - run: npm run dev
+      - run: npm run test
