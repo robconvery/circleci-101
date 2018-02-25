@@ -1,6 +1,13 @@
 
 version: 2
 
+dependencies:
+  override:
+    - yarn
+test:
+  override:
+    - yarn test
+
 jobs:
   build:
     docker:
